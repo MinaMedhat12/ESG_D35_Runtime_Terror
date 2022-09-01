@@ -15,6 +15,8 @@ void dell(struct node* head,u8_t pos);
 void insert_any(struct node* head,u8_t pos,u8_t data );
 
 int main(){
+    u8_t num;
+    u8_t pos;
 
     struct node* head = NULL;
     struct node* second = NULL;
@@ -35,13 +37,32 @@ int main(){
     third->data = 100;
     third->link = NULL;
 
-    //insertNode(third,88);
-    //addLast(head,60);
-    //delLast(head);
-    dell(head,1);
-    insert_any(head,3,50 );
 
-    
+
+    printf("please enter the required operation as number from 1 : 5\n");
+    scanf("%d",&num);
+
+    if(num == 1){
+        insertNode(third,88);
+    }
+    else if(num == 2){
+        addLast(head,60);
+    }
+    else if(num == 3){
+        delLast(head);
+    }
+    else if(num == 4){
+        printf("please, enter the required position\n");
+        scanf("%d",&pos);
+        dell(head,pos);
+    }
+    else if(num == 5){
+        printf("please, enter the required position\n");
+        scanf("%d",&pos);
+        insert_any(head,pos,50 );
+    }
+    else{}
+
     //printf("%d",->data);
 
     return 0;
@@ -134,7 +155,8 @@ void delLast(struct node* head){
     }
     void insert_any(struct node* head,u8_t pos,u8_t data ){
         struct node* ptr = head;
-        struct node*ptr2 = (u8_t)malloc(sizeof(struct node));
+        struct node* ptr2;
+        ptr2 = (struct node*)malloc(sizeof(struct node));
         ptr2->data=data;
         ptr2->link=NULL;
 
@@ -145,6 +167,7 @@ void delLast(struct node* head){
         }
         ptr2->link = ptr->link;
         ptr->link = ptr2;
+        printf("%d",ptr2->data);
 
 
          
