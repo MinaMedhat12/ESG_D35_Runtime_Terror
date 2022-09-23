@@ -28,7 +28,7 @@ int main(void)
         /*********************************************************************************************************/
 
         /*
-        * This case is responsible to make (LED0 -> off) during Seven segment counting (from 30 to 00) *
+        * This case is responsible to make (LED0 -> ON) during Seven segment counting (from 30 to 00) *
         */
 
         if( pb0_status == PRESSED)
@@ -91,7 +91,7 @@ int main(void)
         /*********************************************************************************************************/
 
         /*
-        * This case is responsible to make (LED1 -> off) during Seven segment counting (from 50 to 99) *
+        * This case is responsible to make (LED1 -> ON) during Seven segment counting (from 50 to 99) *
         */
 
         else if( pb1_status == PRESSED)
@@ -164,7 +164,7 @@ int main(void)
         /*********************************************************************************************************/
 
         /*
-        * This case is responsible to make (LED2 -> off) during Seven segment counting (from 00 to 40) *
+        * This case is responsible to make (LED2 -> ON) during Seven segment counting (from 00 to 40) *
         */
 
         else if( pb2_status == PRESSED)
