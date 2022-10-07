@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "io.h": "c",
+        "iom32.h": "c",
+        "hled_interface.h": "c",
+        "hled_cfg.h": "c",
+        "hsev_seg_interface.h": "c",
+        "hpbutt_interface.h": "c",
+        "hkpd_interface.h": "c",
+        "interrupt.h": "c",
+        "hlcd_interface.h": "c"
+    }
+}

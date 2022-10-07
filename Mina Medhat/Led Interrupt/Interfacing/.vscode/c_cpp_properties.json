@@ -1,0 +1,31 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:\\Users\\mina\\Downloads\\avr\\avr\\include",
+                "LIB",
+                "MCAL/MDIO",
+                "MCAL/MEXTI",
+                "HAL/HLED",
+                "HAL/HPBUTT",
+                "HAL/HSEV_SEG",
+                "HAL/HLCD",
+                "HAL/HKPD"
+
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "__AVR_ATmega32__"
+            ],
+            "compilerPath": "C:\\Users\\mina\\Downloads\\avr\\bin\\avr-gcc.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-gcc-x64"
+        }
+    ],
+    "version": 4
+}
